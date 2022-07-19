@@ -14,9 +14,7 @@ function App() {
 
         <div className="container">
 
-          <Header></Header>
-
-
+          {/* <Header></Header> */}
 
           <div className="wrapper dtc">
             {/* Section Hero START */}
