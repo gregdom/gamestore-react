@@ -1,20 +1,54 @@
 import React from 'react';
-
+import logotipo from "./img/logotipo.png";
+import imgHero from "./img/farcry1920.jpg";
 import './css/reset.css';
 import './css/root.css';
 import './css/swiper.css';
 import './css/layout.css';
 import './css/product.css';
-import Header from './components/header';
 
 function App() {
   return (
     <div className="App">
       <div className="main">
-
         <div className="container">
 
-          {/* <Header></Header> */}
+          <header className="dtc">
+            <div className="inHeader">
+
+              <a href="index.html"><img className="logo" src={logotipo} alt="" /></a>
+
+              <div className="infoDesk">
+                <div className="search">
+                  <input type="text" placeholder="Pesquisar" />
+                  <button><span className="material-symbols-outlined">search</span></button>
+                </div>
+
+                <ul>
+                  <li><a href="#">Loja</a></li>
+                  <li><a href="#">GCloud</a></li>
+                  <li><a href="#">Entrar</a></li>
+                  <li><a href="#">Cadastrar</a></li>
+                  <li><a href="#">Suporte</a></li>
+                </ul>
+              </div>
+
+              <button className="btn-m btn2 btn-toggle-subInfo"><span className="material-symbols-outlined">menu</span></button>
+
+              <div className="info">
+                <a href="#"><span className="material-symbols-outlined">home</span>Loja</a>
+                <a href="#"><span className="material-symbols-outlined">stadia_controller</span>GCloud</a>
+                <a href="#"><span className="material-symbols-outlined">login</span>Entrar</a>
+                <a href="#"><span className="material-symbols-outlined">app_registration</span>Cadastrar</a>
+                <a href="#"><span className="material-symbols-outlined">info</span>Suporte</a>
+
+                <div>
+                  <input type="text" placeholder="Faça uma busca" />
+                  <button><span className="material-symbols-outlined">search</span>Pesquisar</button>
+                </div>
+              </div>
+            </div>
+          </header>
 
           <div className="wrapper dtc">
             {/* Section Hero START */}
@@ -23,7 +57,7 @@ function App() {
               <div className="swiper mySwiperHero">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
-
+                    <img className="logo" src={imgHero} alt="" />
                   </div>
 
                 </div>
@@ -184,34 +218,34 @@ function App() {
                     <div className="inGallery">
                       <div className="swiper mySwiperGallery swp">
                         <div className="swiper-wrapper">
-                          <div className="swiper-slide">
+                          <div className="swiper-slide" style={{ marginRight: 16 }}>
                             <a href="#">
                               <div className="main-image">
-                                <img src="" alt="" />
+                                <img src='https://compass-ssl.xbox.com/assets/60/e2/60e22cd1-fa41-444f-a974-67a7914bbaa7.jpg?n=Far-Cry-6_Gallery_1350x759_02.jpg' alt="" />
                               </div>
                             </a>
                           </div>
 
-                          <div className="swiper-slide">
+                          <div className="swiper-slide" style={{ marginRight: 16 }}>
                             <a href="#">
                               <div className="main-image">
-                                <img src="" alt="" />
+                                <img src='https://compass-ssl.xbox.com/assets/69/bc/69bc3ed0-a26f-4f1e-81de-05d84f23a44c.jpg?n=Far-Cry-6_Gallery_1350x759_01.jpg' alt="" />
                               </div>
                             </a>
                           </div>
 
-                          <div className="swiper-slide">
+                          <div className="swiper-slide" style={{ marginRight: 16 }}>
                             <a href="#">
                               <div className="main-image">
-                                <img src="" alt="" />
+                                <img src='https://compass-ssl.xbox.com/assets/19/bc/19bc52bc-d31c-47a1-8400-1861e562fd4b.jpg?n=Far-Cry-6_Gallery_1350x759_03.jpg' alt="" />
                               </div>
                             </a>
                           </div>
 
-                          <div className="swiper-slide">
+                          <div className="swiper-slide" style={{ marginRight: 16 }}>
                             <a href="#">
                               <div className="main-image">
-                                <img src="" alt="" />
+                                <img src='https://store-images.s-microsoft.com/image/apps.59845.13991923467761409.c293ba7a-fc26-41d3-918c-3cd85c486a36.b7dd9d6c-9304-4f78-9ee2-377ceda19dde?q=90&w=320&h=180' alt="" />
                               </div>
                             </a>
                           </div>
@@ -229,7 +263,40 @@ function App() {
                 <section className="s-description">
 
                   <div className="inDescription">
-                    <div className="infogame"></div>
+                    <div className="infogame">
+
+                      <h4>BEM-VINDO A YARA</h4>
+
+                      <p>
+                        Bem-vindo a Yara, um paraíso tropical parado no tempo. Far Cry® 6 leva os jogadores ao mundo cheio de adrenalina de
+                        uma revolução moderna de guerrilha. Como ditador de Yara, Antón Castillo está empenhado em restaurar sua nação de
+                        volta à sua antiga glória por qualquer meio, com seu filho, Diego, obedientemente ao seu lado. Torne-se um
+                        guerrilheiro e destrua o regime deles.
+                      </p>
+
+                      <p>
+                        Mergulhe em uma experiência de sucesso como um Yaran local defendendo seu país do governo de um tirano. Torne-se um
+                        guerrilheiro moderno e libere sua nação.
+                      </p>
+
+                      <div class="pack">
+                        <p>Novo Pacote de Expansão "Implacáveis".</p>
+                        <button>Incluir na compra<span class="material-symbols-outlined">
+                          add_circle
+                        </span></button>
+                      </div>
+
+                      <p>
+                        Lute contra as tropas de Antón no maior terreno de Far Cry até hoje, em selvas, praias e Esperanza, a capital de
+                        Yara e o primeiro cenário urbano de Far Cry.
+                      </p>
+
+                      <p>
+                        Em uma luta em que você deve usar o que tem para fazer o que precisa, use um arsenal de novas armas, veículos e
+                        companheiros animais únicos e surpreendentes para destruir totalmente o regime implacável de Antón.
+                      </p>
+
+                    </div>
 
                     <div className="system">
                       <div className="inSystem">
@@ -343,7 +410,7 @@ function App() {
                 <a href="#">Termos de serviço da GameStore</a>
                 <a href="#">Política de cancelamento da GameStore</a>
                 <a href="#">Avisos de saúde</a>
-                <a href="#">Sobre as classificações</a>
+                <a href="#">Sobre as classNameificações</a>
               </li>
               <li>
                 <a href="#">YouTube</a>

@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.wrapper .s-hero .mySwiperHero .swiper-slide {
+  margin-right: 16px;
+}
+
 .wrapper .s-hero .mySwiperHero .swiper-slide .desc {
   width: 100%;
   height: 100%;
