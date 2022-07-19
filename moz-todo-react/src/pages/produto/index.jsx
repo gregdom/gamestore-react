@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './css/reset.css';
-import './css/root.css';
-import './css/swiper.css';
-import './css/layout.css';
-import './css/product.css';
-import Header from './components/header';
+import './../../css/reset.css';
+import './../../css/root.css';
+import './../../css/swiper.css';
+import './../../css/layout.css';
+import './../../css/product.css';
+import Header from './../../components/header';
 
-function App() {
+const Produto = () => {
   return (
     <div className="App">
       <div className="main">
@@ -366,7 +366,7 @@ function App() {
 
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Produto
