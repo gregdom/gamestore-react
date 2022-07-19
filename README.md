@@ -1,3 +1,4 @@
 # gamestore-react
+
 Atualização de repo
-Atualização Heverton
+Atualização José
