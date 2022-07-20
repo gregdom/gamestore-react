@@ -487,6 +487,7 @@ header .inHeader .infoDesk {
 .s-gallery .inGallery .swiper-slide {
     width: 250px;
     height: auto;
+    margin-right: 16px;
     padding-bottom: 32px;
     font-size: 14px;
 }
