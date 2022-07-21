@@ -1,15 +1,11 @@
 import React from "react";
-import HeaderComponent from "./components/HeaderComponent";
 import SidebarComponent from "./components/SidebarComponent";
-import FooterComponent from "./components/FooterComponent";
 
 import imgHero from "./img/farcry1920.jpg";
 
 function MainRoot() {
   return (
     <div className="container">
-
-      <HeaderComponent />
 
       {/* wrapper START */}
       <div className="wrapper dtc">
@@ -221,8 +217,6 @@ function MainRoot() {
 
       </div>
       {/* wrapper END */}
-
-      <FooterComponent />
 
     </div>
   );

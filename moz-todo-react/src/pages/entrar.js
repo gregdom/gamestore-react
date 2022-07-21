@@ -1,6 +1,6 @@
 function Entrar() {
   return (
-    <h1>Página Entrar</h1>
+      <h1 style={{ color: "#fff" }}>Página Entrar</h1>
   );
 }
 

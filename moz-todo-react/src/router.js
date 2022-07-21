@@ -1,22 +1,28 @@
-
 // EVERTON, ESSE CÓDIGO ESTAVA NO App.JS DO OUTRO PROJETO.
 
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import MainRoot from './Main';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainRoot from "./Main";
 import Produto from "./pages/produto";
 import Entrar from "./pages/entrar";
+import HeaderComponent from "./components/HeaderComponent";
+import FooterComponent from "./components/FooterComponent";
 
-const Routers = () => {
+const Router = () => {
   return (
-    <Router>
-      <Route path="/" exact element={<MainRoot />} />
-      <Route path="/entrar" element={<Entrar />} />
-      <Route path="/produto" element={<Produto />} />
-    </Router>
-    // <MainRoot />
+    <>
+    <HeaderComponent />
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainRoot />}></Route>
+        <Route path="/entrar" element={<Entrar />}></Route>
+        <Route path="/produto" element={<Produto />}></Route>
+      </Routes>
+    </BrowserRouter>
+    <FooterComponent />
+    </>
   );
-}
+};
 
-
-export default Routers;
+export default Router;

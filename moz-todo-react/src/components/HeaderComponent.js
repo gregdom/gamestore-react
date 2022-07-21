@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import logotipo from "../img/logotipo.png";
+import {BrowserRouter as Router} from 'react-router-dom';
 
 function HeaderComponent() {
   return (
-    <>
+    <Router>
       <header className="dtc">
         <div className="inHeader">
 
@@ -15,11 +17,11 @@ function HeaderComponent() {
             </div>
 
             <ul>
-              <li><a href="#">Loja</a></li>
-              <li><a href="#">GCloud</a></li>
-              <li><a href="#">Entrar</a></li>
-              <li><a href="#">Cadastrar</a></li>
-              <li><a href="#">Suporte</a></li>
+              <li><a>Loja</a></li>
+              <li><a>GCloud</a></li>
+              <li><Link to="/entrar">Entrar</Link></li>
+              <li><a>Cadastrar</a></li>
+              <li><a>Suporte</a></li>
             </ul>
           </div>
 
@@ -40,7 +42,8 @@ function HeaderComponent() {
           </div>
         </div>
       </header>
-    </>
+    </Router>
+      
   );
 }
 

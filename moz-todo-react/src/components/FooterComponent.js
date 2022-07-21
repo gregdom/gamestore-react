@@ -1,6 +1,5 @@
 function FooterComponent() {
   return (
-    <>
       <footer className="dtc">
         <div className="inFooter">
           <img src="img/logotipo.png" alt="" />
@@ -32,7 +31,6 @@ function FooterComponent() {
 
         <p><a href="#">© 2022 GameStore. Todos os direitos reservados.</a></p>
       </footer>
-    </>
   );
 }
 

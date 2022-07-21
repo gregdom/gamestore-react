@@ -1,6 +1,6 @@
 function Produto() {
   return (
-    <h1>Página Produto</h1>
+    <h1 style={{ color: "#fff" }}>Página Produto</h1>
   );
 }
 

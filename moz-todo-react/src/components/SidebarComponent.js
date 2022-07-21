@@ -1,6 +1,5 @@
 function SidebarComponent() {
   return (
-    <>
       <div className="sidebar">
         <nav>
           <h2 className="title-t">Plataformas</h2>
@@ -133,7 +132,6 @@ function SidebarComponent() {
 
         </div>
       </div>
-    </>
   );
 }
 
