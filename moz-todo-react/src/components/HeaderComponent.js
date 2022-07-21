@@ -8,7 +8,7 @@ function HeaderComponent() {
       <header className="dtc">
         <div className="inHeader">
 
-          <a href="index.html"><img className="logo" src={logotipo} alt="" /></a>
+          <Link to="/"><img className="logo" src={logotipo} alt="" /></Link>
 
           <div className="infoDesk">
             <div className="search">
@@ -17,11 +17,11 @@ function HeaderComponent() {
             </div>
 
             <ul>
-              <li><a>Loja</a></li>
-              <li><a>GCloud</a></li>
+              <li><Link to="/entrar">Loja</Link></li>
+              <li><Link to="/entrar">GCloud</Link></li>
               <li><Link to="/entrar">Entrar</Link></li>
-              <li><a>Cadastrar</a></li>
-              <li><a>Suporte</a></li>
+              <li><Link to="/entrar">Cadastrar</Link></li>
+              <li><Link to="/entrar">Suporte</Link></li>
             </ul>
           </div>
 

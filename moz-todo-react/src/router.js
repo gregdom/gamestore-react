@@ -2,7 +2,7 @@
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainRoot from "./Main";
+import MainRoot from "./pages/Main";
 import Produto from "./pages/produto";
 import Entrar from "./pages/entrar";
 import HeaderComponent from "./components/HeaderComponent";
@@ -12,7 +12,6 @@ const Router = () => {
   return (
     <>
     <HeaderComponent />
-    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainRoot />}></Route>

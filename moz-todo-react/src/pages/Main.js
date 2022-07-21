@@ -1,7 +1,7 @@
 import React from "react";
-import SidebarComponent from "./components/SidebarComponent";
+import SidebarComponent from "./../components/SidebarComponent";
 
-import imgHero from "./img/farcry1920.jpg";
+import imgHero from "./../img/farcry1920.jpg";
 
 function MainRoot() {
   return (
